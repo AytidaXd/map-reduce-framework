@@ -51,12 +51,12 @@ then
   TIMEOUT+=" -k 2s 45s "
 fi
 
-make -C ../../.. clean
+# make sure software is freshly built.
+make -C ../.. clean
 
 mkdir mr-tmp || exit 1
 cd mr-tmp || exit 1
 
-# make sure software is freshly built.
 make -C ../../.. all
 
 failed_any=0

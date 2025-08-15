@@ -14,7 +14,7 @@ mrworker:
 	(cd $(PROJECT_DIR) && go build $(RACE) mrworker.go)
 
 %.so:
-	(cd $(MRAAPS_DIR) && go build $(RACE) -buildmode=plugin $(subst .so,,$@).go)
+	(cd $(MRAAPS_DIR) && go build $(RACE) -buildmode=plugin -o $@ $(subst .so,,$@)/main.go)
 
 clean:
 	(cd $(MRAAPS_DIR) && go clean)
