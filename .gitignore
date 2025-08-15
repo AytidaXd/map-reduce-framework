@@ -1,0 +1,7 @@
+mr-tmp/
+
+mrcoordinator
+mrsequential
+mrworker
+
+*.so
