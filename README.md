@@ -2,6 +2,12 @@
 
 This repository contains a distributed MapReduce framework implemented in Go, providing a foundation for parallel data processing. The system's design allows for user-defined Map and Reduce tasks via a plugin architecture.
 
+## TODO
+- [X] Ensure core logic correctness on local
+- [ ] Run on docker swarm
+- [ ] Run on kubernetes
+- [ ] Cloud support using EC2 instance(/s) and S3 storage
+
 ## Usage
 
 The framework consists of a coordinator and multiple workers. A sequential runner is also available for testing.
