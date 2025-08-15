@@ -4,6 +4,7 @@ This repository contains a distributed MapReduce framework implemented in Go, pr
 
 ## TODO
 - [X] Ensure core logic correctness on local
+- [ ] Move inter-process communication over the network
 - [ ] Run on docker swarm
 - [ ] Run on kubernetes
 - [ ] Cloud support using EC2 instance(/s) and S3 storage
